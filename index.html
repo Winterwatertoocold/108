@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+        <script src="./jquery-3.2.1.js"></script>        
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        
+        <style type="text/css" >
+        h2 {text-align:center}
+        p.margin {margin: 0.5cm 5cm 0.5cm 5cm}
+        li {margin: 0cm 5cm 0.25cm 5cm}
+        button {margin: 0cm 5cm 1cm 5cm}
+        input.gr {color:darkgrey}
+        table.one
+        {
+          table-layout:automatic
+        }
+        </style>
+        <script src="./main/main.js"></script>
+    </head>
+    <body>
+        <!--write your code here-->
+
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+
+
+
+        
+  <h2>统一建模语言理论测试</h2>
+  <!--考试信息-->
+
+ <!--
+ <div class="row">
+  
+  <div class="col-md-5">考试科目：统一建模语言</div>
+  <div class="col-md-5">考试时间：100分钟</div>
+  <div class="col-md-2">得分：100</div>
+
+</div>
+<div class="row">
+  
+  <div class="col-md-5">班级：<input class="gr" type="text" value="1班"></div>
+  <div class="col-md-5">
+      <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">学号</span>
+              <input type="text" class="form-control" placeholder="001" aria-describedby="sizing-addon3">
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="col-md-2">
+      <div class="rows">
+          <div class="col-lg-7">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">姓名</span>
+              <input type="text" class="form-control" placeholder="小明" aria-describedby="sizing-addon3">
+            </div>
+          </div>
+        </div>
+  </div>
+
+</div>
+-->
+  <!--考试信息-->
+  <div>
+  <p class="margin"><table class="one" border="0" width="900">
+      <tr>
+        <td width="35%">考试科目：统一建模语言</td>
+        <td width="35%">时间：100分钟</td>
+        <td width="30%">得分：100</td>
+      </tr>
+    </table>
+    <table class="one" border="0" width="900">
+    <tr>
+      <td width="35%"> 
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">班级</span>
+              <input type="text" id="class" class="form-control" placeholder="1班" aria-describedby="sizing-addon3">
+            </div>
+          </div>
+        </div>
+    </td>
+      <td width="35%">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">学号</span>
+              <input type="text" id="num" class="form-control" placeholder="001" aria-describedby="sizing-addon3">
+            </div>
+          </div>
+        </div>
+      </td>
+      <td width="30%">
+          <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">姓名</span>
+                  <input type="text" id="name" class="form-control" placeholder="小明" aria-describedby="sizing-addon3">
+                </div>
+              </div>
+            </div>
+      </td>
+    </tr>
+  </table>
+</p>
+</div>
+
+
+<!--填空题-->
+
+<div>
+  <h3><p class="margin">一、填空题（每空5分，共20分）</p></h3>
+  
+  <ol>
+    <li>UML的中文全称是：<input type="text" id="1.1"></li>
+    <li>对象最突出的特征是：<input type="text" id="1.2.1"> <input type="text" id="1.2.2"> <input type="text" id="1.2.3"></li>
+  </ol>
+
+</div>
+
+<!--选择题-->
+<div>
+  <h3><p class="margin">二、选择题（每题10分，共20分）</p></h3>
+  <ol>
+    <li>UML与软件工程的关系是：</li>
+    <form action="select">
+      <p class="margin"><input type="radio" name="answer">(A)UML就是软件工程</p>
+      <p class="margin"><input type="radio" name="answer" id="2.1">(B)UML参与到软件工程中软件开发过程的几个阶段</p>
+      <p class="margin"><input type="radio" name="answer">(C)UML与软件工程无关</p>
+      <p class="margin"><input type="radio" name="answer">(D)UML是软件工程的一部分</p>
+    </form>
+    <li>Java语言支持：</li>
+    <form action="select">
+        <p class="margin"><input type="radio" name="answer" id="2.2">(A)单继承</p>
+        <p class="margin"><input type="radio" name="answer">(B)多继承</p>
+        <p class="margin"><input type="radio" name="answer">(C)单继承和多继承都支持</p>
+        <p class="margin"><input type="radio" name="answer">(D)单继承和多继承都不支持</p>
+      </form>
+  </ol>
+</div>
+
+<!--多选题-->
+<div>
+    <h3><p class="margin">三、多选题（每题10分，共20分）</p></h3>
+    <ol>
+      <li>用例的粒度分为以下哪三种：</li>
+      <form action="select">
+        <p class="margin"><input type="checkbox" name="answer" id="3.1">(A)概述级</p>
+        <p class="margin"><input type="checkbox" name="answer" id="3.1">(B)需求级</p>
+        <p class="margin"><input type="checkbox" name="answer" id="3.1.0">(C)用户目标级</p>
+        <p class="margin"><input type="checkbox" name="answer" id="3.1">(D)子功能级</p>
+      </form>
+      <li>类图由以下哪三部分组成：</li>
+      <form action="select">
+          <p class="margin"><input type="checkbox" name="answer" id="3.2">(A)名称(Name)</p>
+          <p class="margin"><input type="checkbox" name="answer" id="3.2">(B)属性(Attribute)</p>
+          <p class="margin"><input type="checkbox" name="answer" id="3.2">(C)操作(Operation)</p>
+          <p class="margin"><input type="checkbox" name="answer" id="3.2.0">(D)方法(Function)</p>
+        </form>
+    </ol>
+  </div>
+
+  <!--判断题-->
+  <div>
+    <h3><p class="margin">四、判断题（每题10分，共20分）</h3></p>
+    <ol>
+      <li>用例图只是用于和客户交流和沟通的，用于确定需求。<input type="radio" name="answer">√  <input type="radio" name="answer" id="4.1">X</li>
+      <li>在状态图中，终止状态在一个状态图中允许有任意多个。<input type="radio" name="answer1" id="4.2">√  <input type="radio" name="answer1">X</li>
+    </ol>
+  </div>
+
+  <!--简答题-->
+  <div>
+    <h3><p class="margin">五、简答题（每题20分，共20分）</p></h3>
+    <ol>
+      <li>简述什么是模型以及模型的表现形式？</li>
+      <form>
+        <p class="margin"><textarea cols="100" rows="5" id="5"></textarea></p>
+      </form>
+    </ol>
+  </div>
+
+  
+
+  <!--计算结果-->
+  <button type="button" id="calculate">计算结果</button>
+  <!--<button type="button" onclick="alert('Welcome!')">点击这里</button>-->
+
+
+ 
+<!-- Button trigger modal -->
+<!-- 
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+-->
+
+<!-- Modal -->
+<!--
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        You're ready to go!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+    </body>
+</html>
